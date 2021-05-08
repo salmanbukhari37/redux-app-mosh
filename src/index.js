@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from "./store";
-import * as actions from "./store/actions";
+import configureStore from "./store/configureStore";
+import * as actions from "./store/bug";
+
+const store = configureStore();
 
 store.dispatch(actions.bugAdded("Bug 1"));
 store.dispatch(actions.bugAdded("Bug 2"));
