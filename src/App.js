@@ -1,8 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import pipe from "lodash/fp";
-import { Map } from 'immutable';
-import { produce } from "immer";
 
 function App() {
   return (
