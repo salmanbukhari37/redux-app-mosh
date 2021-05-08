@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from "./store";
+import * as actions from "./actions";
+
+store.dispatch(actions.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 2"));
+store.dispatch(actions.bugAdded("Bug 3"));
+store.dispatch(actions.bugResolved(1));
 
 ReactDOM.render(
   <React.StrictMode>
