@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from "./store";
-import * as actions from "./actions";
+import * as actions from "./store/actions";
 
 store.dispatch(actions.bugAdded("Bug 1"));
 store.dispatch(actions.bugAdded("Bug 2"));
